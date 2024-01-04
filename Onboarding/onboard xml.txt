@@ -1,0 +1,151 @@
+set define off;
+spool d:\f.txt
+DECLARE
+m_mode VARCHAR2(6) := 'INSERT';
+p_onboard_info CLOB := EMPTY_CLOB();
+m_function NUMBER:= 0;
+BEGIN
+  p_onboard_info:= '<?xml version="1.0" encoding="UTF-8" standalone="no"?><ProductConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Customer>
+    <CustomerType>CORPORATE</CustomerType>
+    <CustomerSubType>Business</CustomerSubType>
+    <StatusCustomer>ACTIVE</StatusCustomer>
+    <StatusConfiguration>MODIFIED</StatusConfiguration>
+    <LocalCurrencyCode>GBP</LocalCurrencyCode>
+    <RelationID>ACOTEST0002</RelationID>
+    <RelationNumberBOG>TODO</RelationNumberBOG>
+    <Routingaddress>ACOTEST0001</Routingaddress>
+    <ParentID>ONELINQ001</ParentID>
+    <BrandName>ONELINQOB</BrandName>
+	<TPPId>ONELINQ001</TPPId>
+    <NoOfTokens>0</NoOfTokens>
+    <AuthenticationLevel>
+    <InstitutionAccessControl>TWO</InstitutionAccessControl>
+    </AuthenticationLevel> 
+    <Company>
+      <CoCNumber>1196660</CoCNumber>
+      <CountryCode>GB</CountryCode>
+      <City>Gibraltar</City>
+      <LegalEntity>Public Limited Company</LegalEntity>
+      <CompanyName>Account Access and OwnerShip Test AC ABCDEFGH</CompanyName>
+      <CompanyDescription>A hyper-personalised digital financial services super app that strengthens the links between its customers and their homes, helping them manage their money better when saving, spending, traveling, or investing.</CompanyDescription>
+      <CompanyPreviousName/>
+      <CompanyBusinessNature>Financial Technology</CompanyBusinessNature>
+      <CompanyType>Public Limited Company</CompanyType>
+      <CompanyStatus>Active</CompanyStatus>
+      <CompanyRegisteredAddress>2, Irish town, Gibraltar, GX11 1AA, Gibraltar</CompanyRegisteredAddress>
+      <PEP>No</PEP>
+      <BusinessOtherCountry>Yes</BusinessOtherCountry>
+      <ExpectedAnnualVolume>1</ExpectedAnnualVolume>
+      <StreetName>Irish town</StreetName>
+      <HouseNo>2</HouseNo>
+      <PostalCode>GX11 1AA</PostalCode>
+      <OriginatingSystem>Ribbon Plc</OriginatingSystem>
+      <PaymentMethod>Business Payment Service PSD2</PaymentMethod>
+      <PartnerService>
+        <Subscription>YES</Subscription>
+        <ClientID>865541b9-3143252523-4242</ClientID>
+        <ClientSecret/>
+        <CustomerType>Merchant</CustomerType>
+        <DataMode>BOTH</DataMode>
+        <WebhookCustomerURL/>
+        <WebhookSecurityKey/>
+        <CustomerLogoUrl>https://5458374.fs1.hubspotusercontent-na1.net/hubfs/5458374/Ribbon-Logo-R-RGB-01-1.png</CustomerLogoUrl>
+      </PartnerService>
+    </Company>
+    <PostalAddress>
+      <AddressLine>Ribbon Plc</AddressLine>
+      <AddressLine>2, Irish town</AddressLine>
+      <AddressLine>GX11 1AA</AddressLine>
+      <AddressLine>Gibraltar</AddressLine>
+    </PostalAddress> 	
+		<SupportDetails>
+			<SupportEmailId>kkothari@pelican.ai</SupportEmailId>
+			<SupportMobileNo>+917507214999</SupportMobileNo>
+		</SupportDetails>
+	<DynamicThemeService>
+		<Subscription>YES</Subscription>
+		<ThemeID>3</ThemeID>
+		<ThemeVariables>
+			<HeaderBackgroundColor>#1A3347</HeaderBackgroundColor>
+			<FooterBackgroundColor>#1A3347</FooterBackgroundColor>
+			<FooterFontColor>#ffffff</FooterFontColor>
+			<PageBackgroundColor>#255064</PageBackgroundColor>
+			<PageBackgroundImage>none</PageBackgroundImage>
+			<WidgetBackgroundColor>#ffffff</WidgetBackgroundColor>
+			<PrimaryColor>#2C98F0</PrimaryColor>
+			<SecondaryColor>#0e445a</SecondaryColor>
+			<PrimaryFontColor>#444444</PrimaryFontColor>
+			<SecondaryFontColor>#828282</SecondaryFontColor>
+			<LabelColor>#999999</LabelColor>
+			<FormFieldBackground>#FAFAFA</FormFieldBackground>
+			<SuccessColor>#5DD39E</SuccessColor>
+			<ErrorColor>#EA5850</ErrorColor>
+			<PrimaryButtonFontColor>#ffffff</PrimaryButtonFontColor>
+		</ThemeVariables>
+	</DynamicThemeService>	
+	<AccountAccessService>
+	<Subscription>YES</Subscription>
+	<LogoURL/>
+	<VerificationRail>PSD2</VerificationRail>
+	<FlowType>REQUEST</FlowType>
+	<RequestMethodS>
+		<ISEmail>YES</ISEmail>
+		<ISSMS>NO</ISSMS>
+	</RequestMethodS>
+</AccountAccessService>
+<AccountHolderService>
+	<Subscription>YES</Subscription>
+	<LogoURL/>
+	<VerificationRail>PSD2</VerificationRail>
+	<FlowType>REQUEST</FlowType>
+	<RequestMethodS>
+		<ISEmail>YES</ISEmail>
+		<ISSMS>YES</ISSMS>
+	</RequestMethodS>
+</AccountHolderService>	
+<AccountAggregationService>
+	<Subscription>YES</Subscription>
+	<LogoURL/>
+	<VerificationRail>PSD2</VerificationRail>
+	<FlowType>REQUEST</FlowType>
+	<RequestMethodS>
+		<ISEmail>YES</ISEmail>
+		<ISSMS>NO</ISSMS>
+	</RequestMethodS>
+	<Redirectiondomains>
+			<domain/>
+	</Redirectiondomains>
+</AccountAggregationService>
+<IncomeExpenseAnalysisService>
+	<Subscription>YES</Subscription>
+	<LogoURL/>
+	<VerificationRail>PSD2</VerificationRail>
+	<FlowType>REQUEST</FlowType>
+	<RequestMethodS>
+		<ISEmail>YES</ISEmail>
+		<ISSMS>NO</ISSMS>
+	</RequestMethodS>
+	<Redirectiondomains>
+			<domain/>
+	</Redirectiondomains>
+</IncomeExpenseAnalysisService>	
+</Customer>	
+</ProductConfiguration>
+';
+
+
+m_function := pelicanpay_onboard_customer(p_onboard_info);
+--m_function := ob_invoicepay_service(p_onboard_info,'ONELINQC');
+
+ 
+
+IF m_function = 0
+THEN
+DBMS_OUTPUT.put_line('PelicanPay Customer Onboarding completed successfully.');
+ELSE
+DBMS_OUTPUT.put_line('PelicanPay Customer Onboarding failed.');
+END IF;
+END;
+/
+spool off;

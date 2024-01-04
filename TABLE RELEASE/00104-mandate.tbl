@@ -1,0 +1,4 @@
+--[8.2.45.0.02][20230925][PTRAMBAKE][START]
+ALTER TABLE service_transaction MODIFY service_txns_id VARCHAR2(256); 
+--[8.2.45.0.02][20230925][PTRAMBAKE][END]
+EXIT;

@@ -1,0 +1,22 @@
+Pro stat:
+Kindly develop a trigger which will be on employee table.
+On insertion of new employee in employee table a new record to be inserted in Department table with all the department and salary details.
+
+
+
+Create table employee (eid int,ename varchar(20),department varchar(20),salary float);
+
+Create table department(department varchar(20),salary float);
+
+
+Create trigger emp_trigger 
+after
+
+insert on employee
+referencing old as old new as new
+for each row
+begin
+
+insert into department(department ,salary) values(:new.department,:new.salary);
+
+end;

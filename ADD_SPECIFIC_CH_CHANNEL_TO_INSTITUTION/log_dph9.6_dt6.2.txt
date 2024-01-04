@@ -1,0 +1,25 @@
+m_concentrator_id : PLCNGBWB
+m_ctr_beg : 1
+m_ctr_end : 1
+rec2 LOOP : 
+rec2.institutionid : SNTDBNKHQ
+a_ch_channel(ctr).ch_institutionid : SNTDBNKHQ
+rec2 LOOP : 
+rec2.institutionid : SANTATWW
+a_ch_channel(ctr).ch_institutionid : SANTATWW
+rec2 LOOP : 
+rec2.institutionid : PLCNBNKHQ
+a_ch_channel(ctr).ch_institutionid : PLCNBNKHQ
+rec2 LOOP : 
+rec2.institutionid : ACEABANK
+a_ch_channel(ctr).ch_institutionid : ACEABANK
+rec2 LOOP : 
+rec2.institutionid : ACEBBANK
+a_ch_channel(ctr).ch_institutionid : ACEBBANK
+rec2 LOOP : 
+rec2.institutionid : SANTAT00
+a_ch_channel(ctr).ch_institutionid : SANTAT00
+
+
+PL/SQL procedure successfully completed.
+

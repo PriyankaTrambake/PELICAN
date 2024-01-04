@@ -1,0 +1,4 @@
+--[8.2.45.0.02][20230925][PTRAMBAKE][START]
+ALTER TABLE uuser_auth ADD consent_expiry_datetime TIMESTAMP(6);
+--[8.2.45.0.02][20230925][PTRAMBAKE][END]
+EXIT;

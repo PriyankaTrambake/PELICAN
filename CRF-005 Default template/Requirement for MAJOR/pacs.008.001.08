@@ -1,0 +1,402 @@
+
+
+
+MESSAGE TYPE = pacs.008.001.08  
+INSTITUTIONID = SANTATWW
+LOCATION/MSGSEGR = AT
+MSGDB_ID = 26762539
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1.MSGDB
+-------
+
+Insert into MSGDB
+   (MSGDB_ID, QUEUEID, MESSAGENO, FILENAME, MESSAGECLASSTYPE, 
+    STATUS, MSGSTATEMEANING, INPUTDATE, INPUTTIME, CURRQUEUEINDATE, 
+    CURRQUEUEINTIME, PREVQUEUEID, PREVQUEUEINDATE, PREVQUEUEINTIME, PRIORITY, 
+    SENDER, RECEIVER, NUMOFMESSAGES, MESSAGERESERVEDATE, MESSAGERESERVETIME, 
+    PRIORITYDATE, PRIORITYAMOUNT, PRIORITYAMOUNTNUM, CURRENCY, STACHEMMESSAGEFLAG, 
+    SUMOFALLTESTKEYAMOUNTS, LOCALCURRENCYAMOUNT, LOCALCURRENCYAMOUNTNUM, TESTKEYRESULT, LOCKSTATUS, 
+    LOCKEDBY, REPAIREDBY, RELEASEDBY, AUTHORIZEDBY, FORWARDEDBY, 
+    OPERATOR, BLOCK4CRLFPRESENT, PRINTFLAG, MSGATTRIBUTE, MSG_MODE_IN, 
+    CUSTOMER, FUNCTION, SUBFUNCTION, MSDA, INSTITUTIONID, 
+    CUSTOMMSGID, DEALTYPES, MSGCLASS, MSG_MODE_OUT, MESSAGEDIRECTION, 
+    CORRESPONDENT, COUNTRYCODE, CATEGORY, PAYMENTSYSTEM, TRANSREFNO, 
+    COMMENTS, SEQUENCENO, TERMID, RETURNCODE, BATCH, 
+    MSGSEGR, MSGGROUP, CUSTOM1, CUSTOM2, CUSTOM3, 
+    CUSTOM4, CUSTOM5, CUSTOM6, CUSTOM7, CUSTOM8, 
+    CUSTOM9, CUSTOM10, CUSTOM11, CUSTOM12, CUSTOM13, 
+    CUSTOM14, CUSTOM15, CUSTOM16, CUSTOM17, CUSTOM18, 
+    CUSTOM19, CUSTOM20, CUSTOM21, CUSTOM22, CUSTOM23, 
+    CUSTOM24, CUSTOM25, MSGSOURCE, MSGTARGET, CUSTOM26, 
+    CUSTOM27, CUSTOM28, CUSTOM29, CUSTOM30, CUSTOM31, 
+    CUSTOM32, CUSTOM33, CUSTOM34, CUSTOM35, CUSTOM36, 
+    CUSTOM37, CUSTOM38, CUSTOM39, CUSTOM40, CUSTOM41, 
+    CUSTOM42, CUSTOM43, CUSTOM44, CUSTOM45, CUSTOM46, 
+    CUSTOM47, CUSTOM48, CUSTOM49, CUSTOM50, BENBANKNAME, 
+    BENBANKADDR1, BENBANKADDR2, BENBANKADDR3, BENBANKADDR4, BENBANKCITY, 
+    BENBANKSTATECODE, BENBANKZIPCODE, BENBANKCTRY, BENEFNAME, ORIGBANKNAME, 
+    ORIGNAME, TASKID, ACE_APPLN_DOMAIN, MSG_FAMILY, SERVICE_NAME, 
+    REQUEST_TYPE, REQUESTER_DN, RESPONDER_DN, ACTION_TIMESTAMP, SWIFTNET_TOKEN, 
+    MAX_ATTEMPTS, ATTEMPTS_MADE, LAST_ATTEMPT_TS, ERROR_CODE, ERROR_DESC, 
+    NR_FLAG, SIGN_DN, ENCRYPT_DN, AUTHORISER_DN, SNF_FLAG, 
+    SNF_REF, ACKNOWLEDGEMENT, RECORD_TYPE, SWIFTNETATTRIBUTES, CRYPTO_MEMBER_REF, 
+    CUSTOMERACCNO, TRANSACTIONTYPE, EXCEPTIONTYPE, PREVSTATUS, SOURCECHANNELID, 
+    TARGETCHANNELID, MSGDB_ID_ORG, OUTPUT_COUNT, MSGDB_ID_SOURCE, MSGDB_ID_TARGET, 
+    ACCOUNT_DR, ACCOUNT_CR, MSGDB_ID_BATCH, RECORD_GROUP_TYPE, RECORD_END_MARKER, 
+    CHANNEL_ID_SOURCE, CHANNEL_ID_TARGET, CONTROLFLAG, MSGFAMIN, MSGFAMOUT, 
+    MUIF1, MUIF2, REASON_CODE, USER_RESPONSE_FLAG, DUPLICATE_RECORD_KEY, 
+    CHANNEL_RELEASE_MODE, CHANNEL_RELEASE_DATE, BUSINESS_RECEIPT_DATE, MSGDB_ID_OUTPUT_BATCH, HASHCODE1, 
+    HASHCODE2, INSTANCEID, PREVINSTANCEID, RESEND_QUEUEID, RESUBMIT_QUEUEID, 
+    ORG_MSG_REF_DATE, STREAMID, APPLICATIONID, MSGDB_ID_COPY, ENCODED_DIGEST, 
+    ENCODED_ALGORITHM, POSSIBLE_DUPLICATE, RESEND_FLAG, RESUBMIT_FLAG, ACK_STATUS, 
+    RESUBMIT_STATUS, DEBTORAGENTBIC, CREDITORAGENTBIC, OUT_ENVELOPE, OUT_AUTHCODE, 
+    OUT_ALGO, IN_ENVELOPE, IN_AUTHCODE, IN_ALGO, ACK_REQUIRED, 
+    ROUTECHANNELID, COPYCHANNELID, RESEND_COUNT, OTHERREF, GROUPINGINFO, 
+    ACCOUNTBOOKINGINFO, UNLOAD_QUEUEID, LAST_UNLOAD_ATTEMPT, UNLOAD_ATTEMPT, ARCH_STATUS, 
+    ARCH_DATE, MESSAGENO_SOURCE, MESSAGENO_TARGET, ENI_STATUS, ENI_ISCASEOPEN, 
+    MSG_INPUT_MODE, RELATED_REFERENCE, STMT_ENTRYDATE, STMT_FUNDCODE, STMT_REFINFO_FOR_ACCOWNER, 
+    STMT_REFINFO_OF_ACCSERVICINST, STMT_SUPPLEMENTARY_DETAILS, STMT_ADD_REFINFO_FOR_ACCOWNER, DERIVED_BRANCH, DERIVED_PAYMENT_SYSTEM, 
+    DERIVED_PRODUCT, DERIVED_APPLICATION, OTHER_ACCNO, OTHER_PARTY_DETAILS, USR_ACTION_STATUS, 
+    USR_ACTION_QUEUEID, LOCK_CHILD_RECORDS, USR_ACTION_DATETIME, PROCESSING_STATUS, FINAL_SCAN_STATUS, 
+    STP_STATUS, MSGCOUNT, REPAIR_AMOUNT, SERVICE_AMOUNT, DISCOUNT_AMOUNT, 
+    COMM_RECEIVED, COMM_PAID, CREATEDBY, CALCULATEDAMOUNT, SCORE, 
+    EXCHANGE_RATE, SWIFT_PRIORITY, INSTRUCTED_AMOUNT, INSTRUCTED_CURRENCY, SENDER_RECEIVER_INFO, 
+    BENBANKCODE, DEST_COUNTRYCODE, KBTIMESTAMP, INPUTDATETIME, USR_ACTION_TIMESTAMP, 
+    CURRQUEUEINDATETIME, TWOPHASECOMMIT_ID, MSGDB_XA_PARENT_ID, MSGDB_XA_CHILD_ID, MSGDB_XA_HASH_CODE, 
+    PAYMENT_CHANNEL, REPORT_TYPE, PROCESS_ID, PAGE_NUMBER, TOTAL_PAGES, 
+    ACCOUNT_NUMBER, MANDATE_DATA, TRANSACTIONGROUP, RECORD_HASH, HASH_ALGORITHM, 
+    TRANSSUBTYPE, PROCESSING_STAGE, ORIG_RECORD, REPAIR_STATS, MANDATE_ID, 
+    UPLD_BY, UPLD_STATUS, DWNLD_BY, DWNLD_STATUS, ADDITIONAL_INFO, 
+    BALANCE_UPDATED, BALANCE_UPDATED_DATE, OLAP_OPERATOR, NEXT_WORKFLOW_QUEUE_ID, NEXT_WORKFLOW_STATUS, 
+    MQ_ACKN_FEEDBACK_CODE, REPLY_TO_MQ_QUEUE_MANAGER, REPLY_TO_MQ_QUEUE, APPLICATION_IDENTITY_DATA, STATISTICS_ID, 
+    SERVICE_TYPE_ID, UNIQUE_END_TRAN_REFERENCE, PAYMENT_DUEDATE, DISPLAY_FLAG, CURRENT_AUTH_LEVEL, 
+    SETTLEMENTMETHOD, STMT_BALN_CALC_FLAG, SL_DB_POPULATE, ACCOUNT_OPEN_BALANCE, ADDITIONAL_INFO_FLAG, 
+    AUTH_MODE, BALANCE_FLAG, BEN_ADDRESS1, COMPUTE_BALANCE_FLAG, DETAILSOFCHARGES, 
+    DOCUMENT_COUNT, EMAIL_COUNT, GROUPINGINFO_BATCH, GROUPINGINFO_FILE, IMAGES_COUNT, 
+    INV_PAY_REF_ID, LATEST_STMT_RECORD_FLAG, MATCH_STATMENT_FLAG, NATURE_OF_TRANSACTION, NOTES_COUNT, 
+    ORDERPARTY_CURRENCY, ORIGINATING_SYSTEM, OTHERS_ATTACHMENTS_COUNT_1, OTHERS_ATTACHMENTS_COUNT_2, OTHERS_ATTACHMENTS_COUNT_3, 
+    PAYMENT_RUN_ID, PREV_MSGDATE, STATUS_STRING, STMT_BALANCE_TYPE, STMT_CLOSING_BALANCE, 
+    STMT_CLOSING_BOOKED_BALANCE, STMT_OPEN_BALN, STMT_TXNS_SEQNO, TENANT_NAME, VIDEO_COUNT, 
+    GROUP_ID, DATAKEYID, CUSTOMER_ENC, CORRESPONDENT_ENC, BENEFNAME_ENC, 
+    ORIGNAME_ENC, CUSTOMERACCNO_ENC, ACCOUNT_DR_ENC, ACCOUNT_CR_ENC, OTHER_ACCNO_ENC, 
+    OTHER_PARTY_DETAILS_ENC, ACCOUNT_NUMBER_ENC, PELICAN_ACCOUNT_NO, ORG_MESSAGECLASSTYPE, ORDERING_INSTITUTION_ID, 
+    STMT_CLOSING_AVAILABLE_BALANCE, STMT_FWD_AVAILABLE_BALANCES, ISINPUT, ISOUTPUT, NOSTRO_ACCOUNT_NUMBER, 
+    GROUPINGINFO_EOD, COMPANY_CODE, AGGREGATE_FLAG, LAST_SANCTION_DT, SAP_CR, 
+    SAP_DR, SUB_SAP_DR, SUB_SAP_CR, CONTRACT_NUMBER, EXCHANGE_AMOUNT, 
+    INSTRUCTINGAGENT, INSTRUCTEDAGENT, NOSTRO_ACCOUNT_NUMBER_CPTY)
+ Values
+   (26762539, 'TEMPLTQ', 'M00026514327', NULL, 'pacs.008.001.08', 
+    99, NULL, '20231026', '171757', '20231026', 
+    '171757', NULL, NULL, NULL, '9', 
+    'SANTATWWXXX', 'RZBAATWWXXX', 0, NULL, NULL, 
+    '20231026', NULL, 0, 'EUR', NULL, 
+    NULL, NULL, 0, NULL, 0, 
+    NULL, 'ASHWINI', NULL, NULL, NULL, 
+    'SRVRUSER', NULL, 0, 0, 'MANUAL', 
+    NULL, 'NOTA', NULL, 'SEPA', 'SANTATWW', 
+    NULL, NULL, 'EPC', NULL, 'I', 
+    NULL, NULL, 0, NULL, '20231026171554069', 
+    NULL, NULL, NULL, 0, 0, 
+    'AT', NULL, NULL, NULL, NULL, 
+    NULL, NULL, 'Y', 'pacs.008.001.08_AT_SANTATWW', NULL, 
+    NULL, NULL, NULL, NULL, NULL, 
+    NULL, NULL, NULL, NULL, NULL, 
+    NULL, 0, 0, 0, NULL, 
+    NULL, NULL, NULL, NULL, NULL, 
+    NULL, NULL, NULL, NULL, NULL, 
+    NULL, NULL, NULL, NULL, NULL, 
+    NULL, NULL, NULL, NULL, NULL, 
+    NULL, NULL, NULL, 0, 0, 
+    0, NULL, NULL, NULL, NULL, 
+    NULL, NULL, NULL, NULL, NULL, 
+    NULL, NULL, NULL, NULL, NULL, 
+    NULL, 0, NULL, 'SEPA', NULL, 
+    NULL, NULL, NULL, NULL, NULL, 
+    0, 0, NULL, NULL, NULL, 
+    NULL, NULL, NULL, NULL, NULL, 
+    NULL, NULL, 0, 0, NULL, 
+    NULL, NULL, NULL, 0, 'PELICAN', 
+    NULL, 0, 0, 0, 0, 
+    NULL, NULL, 0, 'T', NULL, 
+    'PELICAN', NULL, 0, NULL, NULL, 
+    NULL, NULL, NULL, NULL, NULL, 
+    NULL, NULL, TO_DATE('10/26/2023 17:17:57', 'MM/DD/YYYY HH24:MI:SS'), NULL, NULL, 
+    NULL, 'PELICAN1', 0, NULL, NULL, 
+    NULL, NULL, NULL, 0, NULL, 
+    NULL, NULL, NULL, NULL, 0, 
+    0, NULL, NULL, NULL, NULL, 
+    NULL, NULL, NULL, NULL, NULL, 
+    NULL, NULL, 0, NULL, NULL, 
+    NULL, NULL, NULL, 0, NULL, 
+    NULL, NULL, NULL, NULL, NULL, 
+    NULL, '20231026171554069', NULL, NULL, NULL, 
+    NULL, NULL, NULL, NULL, NULL, 
+    NULL, NULL, NULL, NULL, 0, 
+    NULL, NULL, NULL, NULL, NULL, 
+    NULL, 1, 0, 0, 0, 
+    0, 0, NULL, 0, 0, 
+    0, NULL, 0, NULL, NULL, 
+    NULL, NULL, NULL, TO_TIMESTAMP('10/26/2023 5:17:57.306364 PM','fmMMfm/fmDDfm/YYYY fmHH12fm:MI:SS.FF AM'), NULL, 
+    TO_TIMESTAMP('10/26/2023 5:17:57.306364 PM','fmMMfm/fmDDfm/YYYY fmHH12fm:MI:SS.FF AM'), NULL, NULL, 0, NULL, 
+    NULL, NULL, 'NONE', 0, 0, 
+    NULL, NULL, 'CT', NULL, NULL, 
+    'NONE', 'REPR', NULL, NULL, NULL, 
+    NULL, 0, NULL, 0, NULL, 
+    NULL, NULL, NULL, NULL, NULL, 
+    NULL, NULL, NULL, NULL, NULL, 
+    NULL, NULL, NULL, NULL, NULL, 
+    NULL, NULL, NULL, NULL, NULL, 
+    NULL, NULL, NULL, NULL, NULL, 
+    NULL, NULL, NULL, NULL, NULL, 
+    NULL, NULL, NULL, NULL, NULL, 
+    NULL, NULL, NULL, NULL, NULL, 
+    NULL, NULL, NULL, NULL, NULL, 
+    NULL, NULL, NULL, NULL, NULL, 
+    NULL, NULL, NULL, NULL, NULL, 
+    NULL, NULL, NULL, NULL, NULL, 
+    NULL, NULL, NULL, NULL, NULL, 
+    NULL, NULL, 'N', 'N', NULL, 
+    NULL, NULL, NULL, NULL, NULL, 
+    NULL, NULL, NULL, NULL, NULL, 
+    NULL, NULL, NULL);
+COMMIT;
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2.MSGBLOCKS
+-----------
+SET DEFINE OFF;
+Insert into MSGBLOCKS
+   (MSGDB_ID, MSGBLOCKTYPE, MSGFAMILY, MESSAGE, MODIFIEDFIELDSTRING, 
+    COMMENTSFIELDSTRING, FILLER, INT_ENC_HASH_CODE, EXT_ENC_HASH_CODE, KEY_ID, 
+    AUTHCODE, MSGTYPE, ARCH_STATUS, ARCH_DATE, DISPLAY_FLAG)
+ Values
+   (26762539, 1, 'SEPA', '<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08 RTGS_pacs_guidelines_pacs_008_FIToFICustomerCreditTransfer_pacs_008_001_08_20191021_1543.xsd">
+   <FIToFICstmrCdtTrf>
+      <GrpHdr>
+         <MsgId>NONREF</MsgId>
+         <CreDtTm>2023-10-26T17:17:57.408+05:30</CreDtTm>
+         <NbOfTxs>1</NbOfTxs>
+         <TtlIntrBkSttlmAmt Ccy="EUR"/>
+         <IntrBkSttlmDt>2023-10-26</IntrBkSttlmDt>
+         <SttlmInf>
+            <SttlmMtd>CLRG</SttlmMtd>
+         </SttlmInf>
+         <InstgAgt>
+            <FinInstnId>
+               <BICFI>SANTATWWXXX</BICFI>
+            </FinInstnId>
+         </InstgAgt>
+         <InstdAgt>
+            <FinInstnId>
+               <BICFI>RZBAATWWXXX</BICFI>
+            </FinInstnId>
+         </InstdAgt>
+      </GrpHdr>
+      <CdtTrfTxInf>
+         <PmtId>
+            <InstrId/>
+            <EndToEndId>NULL</EndToEndId>
+            <TxId>NULL</TxId>
+         </PmtId>
+         <PmtTpInf>
+            <SvcLvl>
+               <Cd>SEPA</Cd>
+            </SvcLvl>
+         </PmtTpInf>
+         <IntrBkSttlmAmt Ccy="EUR"/>
+         <ChrgBr>SLEV</ChrgBr>
+         <Dbtr/>
+         <DbtrAgt>
+            <FinInstnId>
+               <BICFI>SANTATWWXXX</BICFI>
+            </FinInstnId>
+         </DbtrAgt>
+         <Cdtr/>
+      </CdtTrfTxInf>
+   </FIToFICstmrCdtTrf>
+</Document>', NULL, 
+    NULL, NULL, NULL, NULL, 'PELICAN_INTERNAL_KEY_ID', 
+    'fEcPhSM3lfe9Nm0Z2uJtHQ==', NULL, NULL, NULL, 'Y');
+Insert into MSGBLOCKS
+   (MSGDB_ID, MSGBLOCKTYPE, MSGFAMILY, MESSAGE, MODIFIEDFIELDSTRING, 
+    COMMENTSFIELDSTRING, FILLER, INT_ENC_HASH_CODE, EXT_ENC_HASH_CODE, KEY_ID, 
+    AUTHCODE, MSGTYPE, ARCH_STATUS, ARCH_DATE, DISPLAY_FLAG)
+ Values
+   (26762539, 175, 'SEPA', '<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08 RTGS_pacs_guidelines_pacs_008_FIToFICustomerCreditTransfer_pacs_008_001_08_20191021_1543.xsd">
+   <FIToFICstmrCdtTrf>
+      <GrpHdr>
+         <MsgId>NONREF</MsgId>
+         <CreDtTm>2023-10-26T17:17:57.408+05:30</CreDtTm>
+         <NbOfTxs>1</NbOfTxs>
+         <TtlIntrBkSttlmAmt Ccy="EUR"/>
+         <IntrBkSttlmDt>2023-10-26</IntrBkSttlmDt>
+         <SttlmInf>
+            <SttlmMtd>CLRG</SttlmMtd>
+         </SttlmInf>
+         <InstgAgt>
+            <FinInstnId>
+               <BICFI>SANTATWWXXX</BICFI>
+            </FinInstnId>
+         </InstgAgt>
+         <InstdAgt>
+            <FinInstnId>
+               <BICFI>RZBAATWWXXX</BICFI>
+            </FinInstnId>
+         </InstdAgt>
+      </GrpHdr>
+      <CdtTrfTxInf>
+         <PmtId>
+            <InstrId/>
+            <EndToEndId>NULL</EndToEndId>
+            <TxId>NULL</TxId>
+         </PmtId>
+         <PmtTpInf>
+            <SvcLvl>
+               <Cd>SEPA</Cd>
+            </SvcLvl>
+         </PmtTpInf>
+         <IntrBkSttlmAmt Ccy="EUR"/>
+         <ChrgBr>SLEV</ChrgBr>
+         <Dbtr/>
+         <DbtrAgt>
+            <FinInstnId>
+               <BICFI>SANTATWWXXX</BICFI>
+            </FinInstnId>
+         </DbtrAgt>
+         <Cdtr/>
+      </CdtTrfTxInf>
+   </FIToFICstmrCdtTrf>
+</Document>', NULL, 
+    NULL, NULL, NULL, NULL, 'PELICAN_INTERNAL_KEY_ID', 
+    'fEcPhSM3lfe9Nm0Z2uJtHQ==', NULL, NULL, NULL, 'N');
+Insert into MSGBLOCKS
+   (MSGDB_ID, MSGBLOCKTYPE, MSGFAMILY, MESSAGE, MODIFIEDFIELDSTRING, 
+    COMMENTSFIELDSTRING, FILLER, INT_ENC_HASH_CODE, EXT_ENC_HASH_CODE, KEY_ID, 
+    AUTHCODE, MSGTYPE, ARCH_STATUS, ARCH_DATE, DISPLAY_FLAG)
+ Values
+   (26762539, 2, 'SEPA', '<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08 RTGS_pacs_guidelines_pacs_008_FIToFICustomerCreditTransfer_pacs_008_001_08_20191021_1543.xsd">
+   <FIToFICstmrCdtTrf>
+      <GrpHdr>
+         <MsgId>NONREF</MsgId>
+         <CreDtTm>2023-10-26T17:17:57.408+05:30</CreDtTm>
+         <NbOfTxs>1</NbOfTxs>
+         <TtlIntrBkSttlmAmt Ccy="EUR"/>
+         <IntrBkSttlmDt>2023-10-26</IntrBkSttlmDt>
+         <SttlmInf>
+            <SttlmMtd>CLRG</SttlmMtd>
+         </SttlmInf>
+         <InstgAgt>
+            <FinInstnId>
+               <BICFI>SANTATWWXXX</BICFI>
+            </FinInstnId>
+         </InstgAgt>
+         <InstdAgt>
+            <FinInstnId>
+               <BICFI>RZBAATWWXXX</BICFI>
+            </FinInstnId>
+         </InstdAgt>
+      </GrpHdr>
+      <CdtTrfTxInf>
+         <PmtId>
+            <InstrId/>
+            <EndToEndId>NULL</EndToEndId>
+            <TxId>NULL</TxId>
+         </PmtId>
+         <PmtTpInf>
+            <SvcLvl>
+               <Cd>SEPA</Cd>
+            </SvcLvl>
+         </PmtTpInf>
+         <IntrBkSttlmAmt Ccy="EUR"/>
+         <ChrgBr>SLEV</ChrgBr>
+         <Dbtr/>
+         <DbtrAgt>
+            <FinInstnId>
+               <BICFI>SANTATWWXXX</BICFI>
+            </FinInstnId>
+         </DbtrAgt>
+         <Cdtr/>
+      </CdtTrfTxInf>
+   </FIToFICstmrCdtTrf>
+</Document>', NULL, 
+    NULL, NULL, NULL, NULL, 'PELICAN_INTERNAL_KEY_ID', 
+    'fEcPhSM3lfe9Nm0Z2uJtHQ==', NULL, NULL, NULL, 'Y');
+Insert into MSGBLOCKS
+   (MSGDB_ID, MSGBLOCKTYPE, MSGFAMILY, MESSAGE, MODIFIEDFIELDSTRING, 
+    COMMENTSFIELDSTRING, FILLER, INT_ENC_HASH_CODE, EXT_ENC_HASH_CODE, KEY_ID, 
+    AUTHCODE, MSGTYPE, ARCH_STATUS, ARCH_DATE, DISPLAY_FLAG)
+ Values
+   (26762539, 145, 'SEPA', '{"accountInfo":{"account_number":"","account_curr":"","institutionname":"","bank_code":"SANTATWWXXX","account_desc":"","accountMode":null,"customerId":null,"actualAccNum":null,"currency_symbol":null,"bank_logo":null,"bankLabel":null,"scheme":null,"ordering_address":null,"priority":null,"swift_priority":null,"balance":null,"virtualBalance":"","idType":null,"idValue":null,"nameAndAddress":"Santander Consumer Bank GmbH\nWagramer Strasse 19","option":null,"partyId":null,"residenceDetails":null,"senderToReceiverInfo":null,"addressList":null,"nameAndAddressList":null,"country":null,"postalCode":null,"city":null,"buildingNo":null,"streetName":null,"clearingSystem":null,"clearingSystemCode":null,"clearingSystemMemberId":null,"bankName":null,"bankAddress":null,"bankPostalCode":null,"bankTown":null,"bankCountry":null,"lei":null,"mmbid":null,"orderingInfo":null,"id":"","accounttype":null,"datakeyid":null,"account_NUMBER_ENC":null,"account_IBAN_ENC":null,"account_TITLE_ENC":null},"ordAccountInfo":null,"beneficiaryInfo":{"ncp_name":"","ncp_address_1":null,"ncp_address_2":null,"ncp_address_3":null,"ncp_code":"","ncp_bic":"","institution":null,"scheme":null,"beneficiary_address":"","address":"","buildingNo":null,"city":null,"country":null,"postalCode":null,"streetDetails":null,"ncp_logo":null,"idType":null,"idValue":null,"nameAndAddress":null,"option":null,"partyId":null,"clearingSystem":null,"lei":null,"mmbid":null,"residenceDetails":null,"creditorAgent":null,"currency":null,"addressList":null,"nameAndAddressList":null,"clearingSystemCode":null,"clearingSystemMemberId":null,"bankName":null,"bankAddress":null,"bankPostalCode":null,"bankTown":null,"bankCountry":null,"benefInfo":null,"account_curr":null,"sepaScheme":null},"ordBeneficiaryInfo":null,"paymentDetails":{"executionDate":1698320348000,"collectionDate":null,"executionDateInString":"20231026","currency":"EUR","pAmount2":"","reference":"","paymentInfo":null,"priority":"NORM","method":null,"requestID":null,"account_number":null,"charge":null,"currency_symbol":null,"chargesBorneBy":"","chargesAccount":"","endToEndId":"20231026171554069","transactionId":"20231026171554069","receiverBic":null,"senderBic":"SANTATWWXXX","operationCode":null,"relatedReference":null,"custSpecifiedRef":null,"orgMsgInfo":null,"orgMsgType":null,"remitanceInfo":[null,null,null],"clearingSystem":null,"lei":null,"instructionId":"","formatOfInstruction":null,"originalUETR":null,"instructedAgtBic":"RZBAATWWXXX","returnFor":null,"messageID":null,"itemId":null,"purpose":null,"settlementMethod":"CLRG","settlementAccount":null,"transactionIdentification":null,"instructingAgent":null,"instructedAgent":null,"thirdAgent":null,"block4tags":null,"initiatingParty":null,"dateFormat":null,"amtModificationAlloewd":null,"paymentGuarenteeNedeed":null},"payDetails95":null,"originalAccountInfo":null,"originalBeneficiaryInfo":null,"originalPaymentDetails":null,"additionalDetails":{"aRegulatoryReporting":null,"aInstructedAmount1":null,"aInstructedAmount2":null,"aFXRate":null,"aFXReference":null,"aCode11":null,"aCode12":null,"aCode21":null,"aCode22":null,"aInstructingParty":null,"aForwardingBank":null,"aPymtPurpose":null,"aStuctUnstruct":"_","aIssuer":null,"aUdebtor":null,"aUcreditor":null,"aUdebtorId":null,"aUcreditorId":null,"aUcreditorInfo":null,"aUdebtorInfo":null,"formatOfInstruction":"U","code":"SCOR","issuer":"","reference":"","sToRInformation":null,"chargeBearer":"SLEV","aditionalPurpose":null,"additionalInfoFlag":null,"mdbpay_ordering_cust_name":"","mdbpay_custaccno":"","detailsOfCharges":"","mdbpay_ord_inst_name_addr1":"","mdbpay_ord_inst_addr2":"","mdbpay_ord_inst_addr3":"","mdbpay_ord_inst_addr4":"","mdbpay_ordering_cust_bic":"","mdbpay_sending_inst_bic":"","mdbpay_thrd_reimb_inst_bic":"","mdbpay_rcvr_corr_bic":"","mdbpay_acc_with_inst_bic":"","mdbpay_sender_corr_bic":"","mdbpay_interm_inst_bic":"","msgdb_id":0,"MDBPAY_CUSTACCNO_ENC":"","MDBPAY_BENEFNAME_ENC":"","MDBPAY_ORDERING_CUST_NAME_ENC":"","mdbpay_charge_code":"","payment_info":null,"fxInstructedAmt":0.0,"fxInstructedCurr":null,"fxRate":null,"fxReference":null,"orderparty_currency":null,"mdbpay_benef_bic":null,"mdbpay_benefname":null,"mdbpay_benef_details":null,"remittance_info":null,"regulatory_reporting":null,"mdbpay_CUSTACCNO_ENC":"","mdbpay_BENEFNAME_ENC":"","mdbpay_ORDERING_CUST_NAME_ENC":""},"originalAdditionalDetails":null,"fxDetails":{"amount":null,"currency":null,"rate":null,"reference":null,"rateType":null,"contractId":null},"paymentInfo":{"purpose":"","servicelevel":null,"localInstrument":"","sequenceType":null,"purpose1":"","localInstrument1":null,"serviceLevels":[]},"ultimateDebtor":{"name":"","idType":"","idValue":null,"scheme":null,"id":"","address":"","iban":null,"account_curr":null,"bic":null,"bank_code":null,"currency":null,"city":null,"postalCode":null,"country":null,"clearingSystem":null,"clearingSystemCode":null,"clearingSystemMemberId":null,"residenceDetails":null,"lei":null,"instructions":null},"ultimateCreditor":null,"originalUltimateDebtor":null,"originalUltimateCreditor":null,"returnDetails":null,"recallDetails":null,"rejectionDetails":null,"orderingInstitution":null,"originalOrderingInstitution":null,"accountWithInstitution":null,"originalAccountWithInstitution":null,"senderCorrespondant":null,"recieverCorrespondant":null,"reimbursementParty":null,"senderInstitution":null,"intermediaryParty":null,"originalIntermediaryParty":null,"instructionDetails":null,"instructionDetailsInfo":null,"instructingParty":null,"partyDetails":null,"settlementInfo":null,"senderCharges":null,"recieverCharges":null,"originalMandateInfo":null,"mandateRelatedInfo":null,"institutionId":"SANTATWW","department":"AT","manualDebitingAccount":false,"manualAccountSchemeType":null,"saveManualAccount":false,"messagesAction":null,"messageFamily":"SEPA","recordGroupType":"T","templateName":"pacs.008.001.08_AT_SANTATWW","messageClassType":"pacs.008.001.08","public1":"Y","userId":"ASHWINI","transactionGroup":"CT","targetMsgType":null,"translatedNativeMsg":null,"status":null,"msgdbId":26762539,"orgPrevInstAgtDetails":null,"orgIntermediaryAgtDetails":null,"pageInstanceId":null,"desktop":false,"bpspsd2":false,"direction":"I","transactionType":null,"envelopeContents":null,"recallFlow":false,"custom2":null,"action":null,"srcMessageDBId":0,"destMessageDbId":0,"parentMessage":null,"parentMessageFlag":null,"srcMessageDirection":null,"queryRelatedInfo":null,"additionDetailsChargesInfo":[{"option":null,"bic":"","clrSys":null,"mmbid":null,"lei":null,"iban":null,"nameAndAddress":"","nameAndAddressList":null,"currency":"","amount":"","clearingSystemCode":null,"clearingSystemMemberId":null,"name":null,"address":null,"country":null,"postalCode":null,"town":null,"residenceDetails":null,"idType":null,"idValue":null,"id":null,"validIban":null}],"additionDetailsChargesInfo1":null,"additionDetailsChargesInfo2":null,"previousInstructingAgentDetails":[{"option":null,"bic":"","clrSys":null,"mmbid":null,"lei":null,"iban":"","nameAndAddress":"","nameAndAddressList":null,"currency":null,"amount":null,"clearingSystemCode":null,"clearingSystemMemberId":null,"name":null,"address":null,"country":null,"postalCode":null,"town":null,"residenceDetails":null,"idType":null,"idValue":null,"id":null,"validIban":null}],"intermediaryAgentDetails":[{"option":null,"bic":"","clrSys":null,"mmbid":null,"lei":null,"iban":"","nameAndAddress":"","nameAndAddressList":null,"currency":null,"amount":null,"clearingSystemCode":null,"clearingSystemMemberId":null,"name":null,"address":null,"country":null,"postalCode":null,"town":null,"residenceDetails":null,"idType":null,"idValue":null,"id":null,"validIban":null}],"initiatingPartyDetails":{"name":null,"idType":null,"idValue":null,"scheme":null,"id":null,"address":null,"iban":null,"account_curr":null,"bic":null,"bank_code":null,"currency":null,"city":null,"postalCode":null,"country":null,"clearingSystem":null,"clearingSystemCode":null,"clearingSystemMemberId":null,"residenceDetails":null,"lei":null,"instructions":null},"orginitiatingPartyDetails":null,"debtorAgent":{"name":null,"idType":null,"idValue":null,"scheme":null,"id":null,"address":null,"iban":"","account_curr":null,"bic":null,"bank_code":null,"currency":null,"city":null,"postalCode":null,"country":null,"clearingSystem":null,"clearingSystemCode":null,"clearingSystemMemberId":null,"residenceDetails":null,"lei":null,"instructions":[{"code":"","additionalInfo":""}]},"creditorAgent":{"name":null,"idType":null,"idValue":null,"scheme":null,"id":null,"address":null,"iban":"","account_curr":null,"bic":null,"bank_code":null,"currency":null,"city":null,"postalCode":null,"country":null,"clearingSystem":null,"clearingSystemCode":null,"clearingSystemMemberId":null,"residenceDetails":null,"lei":null,"instructions":[{"code":"","additionalInfo":""}]},"orgCreditorAgent":null,"translationError":null,"nextInstructingAgentDetails":[{"code":null,"additionalInfo":""}],"senderBic":"SANTATWWXXX","warningCodes":null,"status1":0,"queueId":null}', NULL, 
+    NULL, NULL, NULL, NULL, 'PELICAN_INTERNAL_KEY_ID', 
+    'Voo4dIqxAOmb+LclEzC4kg==', NULL, NULL, NULL, 'Y');
+Insert into MSGBLOCKS
+   (MSGDB_ID, MSGBLOCKTYPE, MSGFAMILY, MESSAGE, MODIFIEDFIELDSTRING, 
+    COMMENTSFIELDSTRING, FILLER, INT_ENC_HASH_CODE, EXT_ENC_HASH_CODE, KEY_ID, 
+    AUTHCODE, MSGTYPE, ARCH_STATUS, ARCH_DATE, DISPLAY_FLAG)
+ Values
+   (26762539, 146, 'SEPA', '{"accountInfo":{"account_number":"","account_curr":"","institutionname":"","bank_code":"SANTATWWXXX","account_desc":"","accountMode":null,"customerId":null,"actualAccNum":null,"currency_symbol":null,"bank_logo":null,"bankLabel":null,"scheme":null,"ordering_address":null,"priority":null,"swift_priority":null,"balance":null,"virtualBalance":"","idType":null,"idValue":null,"nameAndAddress":"Santander Consumer Bank GmbH\nWagramer Strasse 19","option":null,"partyId":null,"residenceDetails":null,"senderToReceiverInfo":null,"addressList":null,"nameAndAddressList":null,"country":null,"postalCode":null,"city":null,"buildingNo":null,"streetName":null,"clearingSystem":null,"clearingSystemCode":null,"clearingSystemMemberId":null,"bankName":null,"bankAddress":null,"bankPostalCode":null,"bankTown":null,"bankCountry":null,"lei":null,"mmbid":null,"orderingInfo":null,"id":"","accounttype":null,"datakeyid":null,"account_NUMBER_ENC":null,"account_IBAN_ENC":null,"account_TITLE_ENC":null},"ordAccountInfo":null,"beneficiaryInfo":{"ncp_name":"","ncp_address_1":null,"ncp_address_2":null,"ncp_address_3":null,"ncp_code":"","ncp_bic":"","institution":null,"scheme":null,"beneficiary_address":"","address":"","buildingNo":null,"city":null,"country":null,"postalCode":null,"streetDetails":null,"ncp_logo":null,"idType":null,"idValue":null,"nameAndAddress":null,"option":null,"partyId":null,"clearingSystem":null,"lei":null,"mmbid":null,"residenceDetails":null,"creditorAgent":null,"currency":null,"addressList":null,"nameAndAddressList":null,"clearingSystemCode":null,"clearingSystemMemberId":null,"bankName":null,"bankAddress":null,"bankPostalCode":null,"bankTown":null,"bankCountry":null,"benefInfo":null,"account_curr":null,"sepaScheme":null},"ordBeneficiaryInfo":null,"paymentDetails":{"executionDate":1698320348000,"collectionDate":null,"executionDateInString":"20231026","currency":"EUR","pAmount2":"","reference":"","paymentInfo":null,"priority":"NORM","method":null,"requestID":null,"account_number":null,"charge":null,"currency_symbol":null,"chargesBorneBy":"","chargesAccount":"","endToEndId":"20231026171554069","transactionId":"20231026171554069","receiverBic":null,"senderBic":"SANTATWWXXX","operationCode":null,"relatedReference":null,"custSpecifiedRef":null,"orgMsgInfo":null,"orgMsgType":null,"remitanceInfo":[null,null,null],"clearingSystem":null,"lei":null,"instructionId":"","formatOfInstruction":null,"originalUETR":null,"instructedAgtBic":"RZBAATWWXXX","returnFor":null,"messageID":null,"itemId":null,"purpose":null,"settlementMethod":"CLRG","settlementAccount":null,"transactionIdentification":null,"instructingAgent":null,"instructedAgent":null,"thirdAgent":null,"block4tags":null,"initiatingParty":null,"dateFormat":null,"amtModificationAlloewd":null,"paymentGuarenteeNedeed":null},"payDetails95":null,"originalAccountInfo":null,"originalBeneficiaryInfo":null,"originalPaymentDetails":null,"additionalDetails":{"aRegulatoryReporting":null,"aInstructedAmount1":null,"aInstructedAmount2":null,"aFXRate":null,"aFXReference":null,"aCode11":null,"aCode12":null,"aCode21":null,"aCode22":null,"aInstructingParty":null,"aForwardingBank":null,"aPymtPurpose":null,"aStuctUnstruct":"_","aIssuer":null,"aUdebtor":null,"aUcreditor":null,"aUdebtorId":null,"aUcreditorId":null,"aUcreditorInfo":null,"aUdebtorInfo":null,"formatOfInstruction":"U","code":"SCOR","issuer":"","reference":"","sToRInformation":null,"chargeBearer":"SLEV","aditionalPurpose":null,"additionalInfoFlag":null,"mdbpay_ordering_cust_name":"","mdbpay_custaccno":"","detailsOfCharges":"","mdbpay_ord_inst_name_addr1":"","mdbpay_ord_inst_addr2":"","mdbpay_ord_inst_addr3":"","mdbpay_ord_inst_addr4":"","mdbpay_ordering_cust_bic":"","mdbpay_sending_inst_bic":"","mdbpay_thrd_reimb_inst_bic":"","mdbpay_rcvr_corr_bic":"","mdbpay_acc_with_inst_bic":"","mdbpay_sender_corr_bic":"","mdbpay_interm_inst_bic":"","msgdb_id":0,"MDBPAY_CUSTACCNO_ENC":"","MDBPAY_BENEFNAME_ENC":"","MDBPAY_ORDERING_CUST_NAME_ENC":"","mdbpay_charge_code":"","payment_info":null,"fxInstructedAmt":0.0,"fxInstructedCurr":null,"fxRate":null,"fxReference":null,"orderparty_currency":null,"mdbpay_benef_bic":null,"mdbpay_benefname":null,"mdbpay_benef_details":null,"remittance_info":null,"regulatory_reporting":null,"mdbpay_CUSTACCNO_ENC":"","mdbpay_BENEFNAME_ENC":"","mdbpay_ORDERING_CUST_NAME_ENC":""},"originalAdditionalDetails":null,"fxDetails":{"amount":null,"currency":null,"rate":null,"reference":null,"rateType":null,"contractId":null},"paymentInfo":{"purpose":"","servicelevel":null,"localInstrument":"","sequenceType":null,"purpose1":"","localInstrument1":null,"serviceLevels":[]},"ultimateDebtor":{"name":"","idType":"","idValue":null,"scheme":null,"id":"","address":"","iban":null,"account_curr":null,"bic":null,"bank_code":null,"currency":null,"city":null,"postalCode":null,"country":null,"clearingSystem":null,"clearingSystemCode":null,"clearingSystemMemberId":null,"residenceDetails":null,"lei":null,"instructions":null},"ultimateCreditor":null,"originalUltimateDebtor":null,"originalUltimateCreditor":null,"returnDetails":null,"recallDetails":null,"rejectionDetails":null,"orderingInstitution":null,"originalOrderingInstitution":null,"accountWithInstitution":null,"originalAccountWithInstitution":null,"senderCorrespondant":null,"recieverCorrespondant":null,"reimbursementParty":null,"senderInstitution":null,"intermediaryParty":null,"originalIntermediaryParty":null,"instructionDetails":null,"instructionDetailsInfo":null,"instructingParty":null,"partyDetails":null,"settlementInfo":null,"senderCharges":null,"recieverCharges":null,"originalMandateInfo":null,"mandateRelatedInfo":null,"institutionId":"SANTATWW","department":"AT","manualDebitingAccount":false,"manualAccountSchemeType":null,"saveManualAccount":false,"messagesAction":null,"messageFamily":"SEPA","recordGroupType":"T","templateName":"pacs.008.001.08_AT_SANTATWW","messageClassType":"pacs.008.001.08","public1":"Y","userId":"ASHWINI","transactionGroup":"CT","targetMsgType":null,"translatedNativeMsg":null,"status":null,"msgdbId":26762539,"orgPrevInstAgtDetails":null,"orgIntermediaryAgtDetails":null,"pageInstanceId":null,"desktop":false,"bpspsd2":false,"direction":"I","transactionType":null,"envelopeContents":null,"recallFlow":false,"custom2":null,"action":null,"srcMessageDBId":0,"destMessageDbId":0,"parentMessage":null,"parentMessageFlag":null,"srcMessageDirection":null,"queryRelatedInfo":null,"additionDetailsChargesInfo":[{"option":null,"bic":"","clrSys":null,"mmbid":null,"lei":null,"iban":null,"nameAndAddress":"","nameAndAddressList":null,"currency":"","amount":"","clearingSystemCode":null,"clearingSystemMemberId":null,"name":null,"address":null,"country":null,"postalCode":null,"town":null,"residenceDetails":null,"idType":null,"idValue":null,"id":null,"validIban":null}],"additionDetailsChargesInfo1":null,"additionDetailsChargesInfo2":null,"previousInstructingAgentDetails":[{"option":null,"bic":"","clrSys":null,"mmbid":null,"lei":null,"iban":"","nameAndAddress":"","nameAndAddressList":null,"currency":null,"amount":null,"clearingSystemCode":null,"clearingSystemMemberId":null,"name":null,"address":null,"country":null,"postalCode":null,"town":null,"residenceDetails":null,"idType":null,"idValue":null,"id":null,"validIban":null}],"intermediaryAgentDetails":[{"option":null,"bic":"","clrSys":null,"mmbid":null,"lei":null,"iban":"","nameAndAddress":"","nameAndAddressList":null,"currency":null,"amount":null,"clearingSystemCode":null,"clearingSystemMemberId":null,"name":null,"address":null,"country":null,"postalCode":null,"town":null,"residenceDetails":null,"idType":null,"idValue":null,"id":null,"validIban":null}],"initiatingPartyDetails":{"name":null,"idType":null,"idValue":null,"scheme":null,"id":null,"address":null,"iban":null,"account_curr":null,"bic":null,"bank_code":null,"currency":null,"city":null,"postalCode":null,"country":null,"clearingSystem":null,"clearingSystemCode":null,"clearingSystemMemberId":null,"residenceDetails":null,"lei":null,"instructions":null},"orginitiatingPartyDetails":null,"debtorAgent":{"name":null,"idType":null,"idValue":null,"scheme":null,"id":null,"address":null,"iban":"","account_curr":null,"bic":null,"bank_code":null,"currency":null,"city":null,"postalCode":null,"country":null,"clearingSystem":null,"clearingSystemCode":null,"clearingSystemMemberId":null,"residenceDetails":null,"lei":null,"instructions":[{"code":"","additionalInfo":""}]},"creditorAgent":{"name":null,"idType":null,"idValue":null,"scheme":null,"id":null,"address":null,"iban":"","account_curr":null,"bic":null,"bank_code":null,"currency":null,"city":null,"postalCode":null,"country":null,"clearingSystem":null,"clearingSystemCode":null,"clearingSystemMemberId":null,"residenceDetails":null,"lei":null,"instructions":[{"code":"","additionalInfo":""}]},"orgCreditorAgent":null,"translationError":null,"nextInstructingAgentDetails":[{"code":null,"additionalInfo":""}],"senderBic":"SANTATWWXXX","warningCodes":null,"status1":0,"queueId":null}', NULL, 
+    NULL, NULL, NULL, NULL, 'PELICAN_INTERNAL_KEY_ID', 
+    'Voo4dIqxAOmb+LclEzC4kg==', NULL, NULL, NULL, 'Y');
+COMMIT;
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3.MSGDB_OUTPUT
+--------------
+
+SET DEFINE OFF;
+Insert into MSGDB_OUTPUT
+   (MSGDB_ID, MDBOUT_MODE, MDBOUT_STATUS, MDBOUT_DATE_TIME, ARCH_STATUS, 
+    ARCH_DATE, INSTANCEID)
+ Values
+   (26762539, 'RECEIVE', 'N', NULL, NULL, 
+    NULL, NULL);
+
+	
+	
+	
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4.MSGDB_PAY
+-----------	
+	
+Insert into MSGDB_PAY
+   (MSGDB_ID, MDBPAY_PAYMENTSYSTEM, MDBPAY_ORDERING_CUST_BIC, MDBPAY_ORDERING_CUST_LCODE, MDBPAY_ORDERING_CUST_LC_TYPE, 
+    MDBPAY_SENDING_INST_BIC, MDBPAY_SENDING_INST_LCODE, MDBPAY_SENDING_INST_LC_TYPE, MDBPAY_ORDERING_INST_BIC, MDBPAY_ORDERING_INST_LCODE, 
+    MDBPAY_ORDERING_INST_LC_TYPE, MDBPAY_SENDER_CORR_BIC, MDBPAY_SENDER_CORR_LCODE, MDBPAY_SENDER_CORR_LC_TYPE, MDBPAY_RCVR_CORR_BIC, 
+    MDBPAY_RCVR_CORR_LCODE, MDBPAY_RCVR_CORR_LC_TYPE, MDBPAY_THRD_REIMB_INST_BIC, MDBPAY_THRD_REIMB_INST_LCODE, MDBPAY_THRD_REIMB_INST_LC_TYPE, 
+    MDBPAY_INTERM_INST_BIC, MDBPAY_INTERM_INST_LCODE, MDBPAY_INTERM_INST_LC_TYPE, MDBPAY_ACC_WITH_INST_BIC, MDBPAY_ACC_WITH_INST_LCODE, 
+    MDBPAY_ACC_WITH_INST_LC_TYPE, MDBPAY_BENEF_BIC, MDBPAY_CUSTACCNO, MDBPAY_RELATED_REF, MDBPAY_EXCH_RATE, 
+    MDBPAY_ORI_VAL_DT, MDBPAY_ORI_VAL_AMT, MDBPAY_CHARGE_1, MDBPAY_CHARGE_1_CURR, MDBPAY_CHARGE_2, 
+    MDBPAY_CHARGE_2_CURR, MDBPAY_CHARGE_CODE, MDBPAY_BRANCH, MDBPAY_BENEFNAME, MDBPAY_ORDERING_CUST_NAME, 
+    MDBPAY_BENF_TYPE, ARCH_STATUS, ARCH_DATE, REMITTANCE_INFO, MDBPAY_ORD_INST_NAME_ADDR1, 
+    MDBPAY_ORD_INST_ADDR2, MDBPAY_ORD_INST_ADDR3, MDBPAY_ORD_INST_ADDR4, CHARGE_CODE_NEW, MDBPAY_BENEF_DETAILS, 
+    MDBPAY_ORD_INST_ADDR1, REGULATORY_RPT, REMITTANCE_STR_CODE, REMITTANCE_STR_ISSUER, REMITTANCE_STR_REF, 
+    REMITTANCE_UNSTR_INFO, MDBPAY_CUSTACCNO_ENC, MDBPAY_BENEFNAME_ENC, MDBPAY_ORDERING_CUST_NAME_ENC, END2END_ID, 
+    BI_TRANS_CODE, SOURCE_SYS, UETR)
+ Values
+   (26762539, NULL, NULL, NULL, NULL, 
+    NULL, NULL, NULL, NULL, NULL, 
+    NULL, NULL, NULL, NULL, NULL, 
+    NULL, NULL, NULL, NULL, NULL, 
+    NULL, NULL, NULL, NULL, NULL, 
+    NULL, NULL, NULL, NULL, NULL, 
+    NULL, NULL, NULL, NULL, NULL, 
+    NULL, NULL, NULL, NULL, NULL, 
+    NULL, NULL, NULL, 'Unstructured', NULL, 
+    NULL, NULL, NULL, NULL, NULL, 
+    'N', NULL, NULL, NULL, NULL, 
+    NULL, NULL, NULL, NULL, NULL, 
+    NULL, NULL, NULL);
+
